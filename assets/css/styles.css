@@ -402,6 +402,116 @@ p { text-wrap: pretty; }
   background: var(--border-strong);
 }
 
+/* ---------- Featured project ---------- */
+.featured {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 36px;
+  padding: 32px;
+  margin-bottom: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.featured-title { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 6px 0 4px; }
+.featured-subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 16px; }
+.featured-lead { color: var(--muted); font-size: 0.98rem; margin-bottom: 20px; }
+.featured-points { display: grid; gap: 10px; }
+.featured-points li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+.featured-points li::before {
+  content: "";
+  position: absolute;
+  left: 3px; top: 0.55em;
+  width: 7px; height: 7px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+.featured-details {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.featured-details summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+.featured-details summary::-webkit-details-marker { display: none; }
+.featured-details summary::before { content: "+"; font-family: var(--font-mono); }
+.featured-details[open] summary::before { content: "\2212"; }
+.featured-details ul { display: grid; gap: 8px; margin-top: 14px; }
+.featured-details li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.featured-details li::before {
+  content: "";
+  position: absolute;
+  left: 2px; top: 0.62em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+.featured-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 32px;
+  border-left: 1px solid var(--border);
+}
+.featured-facts { display: grid; gap: 12px; }
+.featured-facts div { display: flex; justify-content: space-between; gap: 14px; font-size: 0.86rem; }
+.featured-facts dt {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+}
+.featured-facts dd { font-weight: 600; text-align: right; }
+.featured-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.featured-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.featured-metrics dt {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.featured-metrics dd { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+.subhead {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--faint);
+  margin-bottom: 16px;
+}
+
 /* ---------- Cards ---------- */
 .cards {
   display: grid;
@@ -527,11 +637,17 @@ p { text-wrap: pretty; }
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .menu-btn { display: grid; }
-  .nav-cv { display: none; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-photo { max-width: 440px; }
   .about-grid,
   .edu-grid { grid-template-columns: 1fr; gap: 28px; }
+  .featured { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
+  .featured-side {
+    padding-left: 0;
+    padding-top: 22px;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
   .hero { padding-top: calc(var(--header-h) + 54px); padding-bottom: 68px; }
   .section { padding: 72px 0; }
   .section-head { margin-bottom: 38px; }
@@ -562,5 +678,5 @@ p { text-wrap: pretty; }
   .navbar, .hero-actions, .contact-actions, .footer, .skip-link { display: none; }
   .section, .hero { padding: 24px 0; }
   body { background: #fff; color: #000; }
-  .timeline-item, .card, .skill-group, .about-facts, .edu-card, .cert-list li { box-shadow: none; break-inside: avoid; }
+  .timeline-item, .card, .skill-group, .about-facts, .edu-card, .cert-list li, .featured { box-shadow: none; break-inside: avoid; }
 }
