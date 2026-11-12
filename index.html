@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David May Cen · Fullstack .NET Engineer</title>
+  <meta name="description" content="Fullstack .NET engineer and tech lead with 10 years building enterprise web platforms: ASP.NET Core, SQL Server, Vue 3, and cloud microservices on Azure and AWS." />
+  <meta name="author" content="David May Cen" />
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c0c10" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="David May Cen · Fullstack .NET Engineer" />
+  <meta property="og:description" content="Fullstack .NET engineer and tech lead. ASP.NET Core, SQL Server, Vue 3, and cloud microservices on Azure and AWS." />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      d.setAttribute("data-theme", t);
+      d.classList.add("js");
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David May Cen",
+    "jobTitle": "Fullstack .NET Engineer",
+    "email": "mailto:davisaac8@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mérida", "addressRegion": "Yucatán", "addressCountry": "MX" },
+    "knowsAbout": ["C#", ".NET", "ASP.NET Core", "SQL Server", "Vue.js", "TypeScript", "Azure", "AWS", "Microservices"],
+    "sameAs": ["https://www.linkedin.com/in/dimayc", "https://github.com/davisaac8", "https://medium.com/@davisaac8"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-es="Saltar al contenido">Skip to content</a>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#home" aria-label="David May Cen — home">
+        <span class="logo-mark" aria-hidden="true">DM</span>
+        <span class="logo-text">David May Cen</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <ul>
+          <li><a href="#about" data-es="Sobre mí">About</a></li>
+          <li><a href="#experience" data-es="Experiencia">Experience</a></li>
+          <li><a href="#work" data-es="Proyectos">Work</a></li>
+          <li><a href="#skills" data-es="Habilidades">Skills</a></li>
+          <li><a href="#contact" data-es="Contacto">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm nav-cv" href="assets/cv/david-may-cen-fullstack-dotnet.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          <span data-es="CV">CV</span>
+        </a>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="i-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about" data-es="Sobre mí">About</a></li>
+        <li><a href="#experience" data-es="Experiencia">Experience</a></li>
+        <li><a href="#work" data-es="Proyectos">Work</a></li>
+        <li><a href="#skills" data-es="Habilidades">Skills</a></li>
+        <li><a href="#contact" data-es="Contacto">Contact</a></li>
+        <li><a href="assets/cv/david-may-cen-fullstack-dotnet.pdf" download data-es="Descargar CV">Download CV</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-inner">
+          <h1>David May Cen</h1>
+          <p class="hero-role" data-es="Ingeniero Fullstack .NET y Tech Lead">Fullstack .NET Engineer &amp; Tech Lead</p>
+          <p class="hero-lead" data-es="Construyo y modernizo plataformas web empresariales de punta a punta: backends .NET, capas de datos en SQL Server e interfaces en Vue 3 sobre Azure y AWS.">
+            I build and modernize enterprise web platforms end to end — .NET backends,
+            SQL Server data layers, and Vue&nbsp;3 interfaces running on Azure and AWS.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:davisaac8@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              <span data-es="Contáctame">Get in touch</span>
+            </a>
+            <a class="btn btn-ghost" href="assets/cv/david-may-cen-fullstack-dotnet.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+              <span data-es="Descargar CV">Download CV</span>
+            </a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt data-es="Experiencia">Experience</dt><dd data-es="10 años">10 years</dd></div>
+            <div><dt data-es="Stack principal">Core stack</dt><dd data-es="9 años C# / .NET">9 yrs C# / .NET</dd></div>
+            <div><dt data-es="Plataformas legacy">Legacy platforms</dt><dd data-es="2 modernizadas">2 modernized</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="assets/img/dimayc-dacodes.jpg" alt="David May Cen" width="1152" height="896" fetchpriority="high" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-es="01 — Sobre mí">01 — About</p>
+          <h2 id="about-title" data-es="Ingeniería sólida, liderazgo natural">Engineer first, lead by default</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p data-es="Soy ingeniero fullstack y tech lead radicado en Mérida, México, con 10 años de experiencia profesional en software y 9 años de desarrollo práctico en C#/.NET a través de .NET Framework 4.5, .NET Core 3.1 y .NET 6, 8 y 10.">
+              I'm a fullstack engineer and tech lead based in Mérida, México, with 10 years of
+              professional software experience and 9 years of hands-on C#/.NET development across
+              .NET Framework 4.5, .NET Core 3.1, and .NET 6, 8 and 10.
+            </p>
+            <p data-es="La mayor parte de mi trabajo ha sido de punta a punta: APIs REST en ASP.NET Core, Entity Framework Core y SQL Server en el backend, combinados con Vue 3 y TypeScript en el frontend. He liderado migraciones de sistemas legacy de escritorio y servidor a plataformas web modernas, y he desacoplado monolitos en microservicios orientados a eventos en Azure y AWS.">
+              Most of my work has been end to end: ASP.NET Core REST APIs, Entity Framework Core and
+              SQL Server on the backend, paired with Vue 3 and TypeScript on the front. I've led
+              migrations from legacy desktop and server systems to modern web platforms, and decoupled
+              monoliths into event-driven microservices on Azure and AWS.
+            </p>
+            <p data-es="Me importan la arquitectura limpia, el código seguro y las revisiones que realmente enseñan. También dirijo flujos de desarrollo asistido por IA con validación estricta, para que la velocidad nunca cueste calidad.">
+              I care about clean architecture, secure coding, and code reviews that actually teach.
+              I also run AI-assisted development workflows with strict validation, so speed never
+              comes at the cost of quality.
+            </p>
+          </div>
+          <aside class="about-facts reveal" aria-label="Quick facts">
+            <ul>
+              <li><span data-es="Ubicación">Based in</span><strong>Mérida, Yucatán, MX</strong></li>
+              <li><span data-es="Enfoque">Focus</span><strong>.NET · SQL Server · Vue</strong></li>
+              <li><span data-es="Certificado">Certified</span><strong>Azure AZ-204, AZ-900</strong></li>
+              <li><span data-es="Idiomas">Languages</span><strong data-es="Español · Inglés (C1)">Spanish · English (C1)</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-es="02 — Experiencia">02 — Experience</p>
+          <h2 id="experience-title" data-es="Dónde he construido">Where I've built</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <h3 data-es="Ingeniero Backend / Fullstack">Backend / Fullstack Engineer</h3>
+                <p class="company">The Palace Company</p>
+              </div>
+              <p class="period" data-es="Ene 2026 — Actualidad">Jan 2026 — Present</p>
+            </div>
+            <ul>
+              <li data-es="Construyo APIs REST de alto rendimiento para motores de reservas hoteleras y facturación recurrente con .NET y NestJS/TypeScript en AWS (ECS/Fargate, Lambda, SQS).">Build high-throughput REST APIs for hotel booking engines and recurring billing with .NET and NestJS/TypeScript on AWS (ECS/Fargate, Lambda, SQS).</li>
+              <li data-es="Dividí flujos monolíticos de reservas y facturación en servicios desplegables de forma independiente, reduciendo los tiempos de carga de la API hasta un 15% en picos de tráfico de reservas.">Split monolithic booking and billing workflows into independently deployable services, reducing API load times by up to 15% during peak reservation traffic.</li>
+              <li data-es="Aplico prácticas de codificación segura en las capas de acceso a datos y API: validación de DTO, prevención de inyección SQL y gestión de secretos con AWS Secrets Manager.">Apply secure coding across data access and API layers: DTO validation, SQL injection prevention, and secrets management with AWS Secrets Manager.</li>
+              <li data-es="Automatizo CI/CD con GitHub Actions, añadiendo monitoreo centralizado, logs, métricas y despliegues estandarizados.">Automate CI/CD with GitHub Actions, adding centralized monitoring, logs, metrics, and standardized deployments.</li>
+              <li data-es="Lidero flujos de desarrollo asistido por IA (Claude, GitHub Copilot) respaldados por revisiones rigurosas y pruebas automatizadas.">Lead AI-assisted development workflows (Claude, GitHub Copilot) backed by rigorous reviews and automated testing.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <h3 data-es="Desarrollador Fullstack .NET / Tech Lead">Fullstack .NET Developer / Tech Lead</h3>
+                <p class="company">Cotemar SA de CV</p>
+              </div>
+              <p class="period" data-es="Ene 2020 — Dic 2025">Jan 2020 — Dec 2025</p>
+            </div>
+            <ul>
+              <li data-es="Lideré la migración de aplicaciones legacy de escritorio y servidor a plataformas web modernas construidas con .NET Core/.NET 6/8, Entity Framework Core, SQL Server y Vue 3.">Led the migration of legacy desktop and server applications to modern web platforms built on .NET Core/.NET 6/8, Entity Framework Core, SQL Server, and Vue 3.</li>
+              <li data-es="Diseñé y construí módulos fullstack: APIs REST en .NET e interfaces reactivas en Vue 3 con TypeScript y Tailwind CSS.">Architected fullstack modules: RESTful APIs on .NET plus reactive interfaces in Vue 3 with TypeScript and Tailwind CSS.</li>
+              <li data-es="Diseñé, administré y optimicé bases de datos SQL Server, consultas complejas en T-SQL y procedimientos almacenados para cargas empresariales altas.">Designed, administered, and optimized SQL Server databases, complex T-SQL queries, and stored procedures for high-load enterprise workloads.</li>
+              <li data-es="Construí una herramienta interna de generación de código que producía scripts SQL, capas EF/.NET y componentes Vue 3 a partir de entidades de base de datos, reduciendo el tiempo de desarrollo de catálogos en un 75%.">Built an internal code generation tool producing SQL scripts, EF/.NET layers, and Vue 3 components from database entities, cutting catalog development time by 75%.</li>
+              <li data-es="Desacoplé procesos monolíticos en microservicios orientados a eventos con Azure Service Bus, Functions y Logic Apps.">Decoupled monolithic processes into event-driven microservices with Azure Service Bus, Functions, and Logic Apps.</li>
+              <li data-es="Migré los despliegues a Azure Pipelines automatizados (30% más rápidos) y lideré revisiones de código, pruebas unitarias y mentoría que redujeron los hotfixes en producción un 15%.">Moved deployments to automated Azure Pipelines (30% faster) and led code reviews, unit testing, and mentoring that reduced production hotfixes by 15%.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <h3 data-es="Desarrollador de Software">Software Developer</h3>
+                <p class="company">Inadware de México</p>
+              </div>
+              <p class="period" data-es="Ene 2017 — Dic 2019">Jan 2017 — Dec 2019</p>
+            </div>
+            <ul>
+              <li data-es="Desarrollé sistemas de gestión clínica multiPaís (SysLabs) con .NET y SQL Server, incluyendo protocolos de integración con hardware e instancias de base de datos distribuidas.">Developed multi-country clinical management systems (SysLabs) with .NET and SQL Server, including custom hardware integration protocols and distributed database instances.</li>
+              <li data-es="Apoyé la refactorización de la plataforma legacy hacia estándares web modernos y estandaricé los flujos de Git en los equipos de ingeniería.">Supported legacy platform refactoring toward modern web standards and standardized Git workflows across engineering teams.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-es="03 — Proyectos seleccionados">03 — Selected work</p>
+          <h2 id="work-title" data-es="Problemas que he resuelto">Problems I've solved</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <p class="card-tag" data-es="Modernización legacy">Legacy modernization</p>
+            <h3 data-es="De escritorio a web, sin caídas">Desktop to web, without downtime</h3>
+            <p data-es="Migré aplicaciones legacy de escritorio y servidor a .NET Core y Vue 3 manteniendo operativas cargas empresariales altas durante toda la transición.">Migrated legacy desktop and server applications to .NET Core and Vue 3 while keeping high-load enterprise workloads running throughout the transition.</p>
+            <p class="card-meta">Cotemar · 2020–2025</p>
+          </article>
+          <article class="card reveal">
+            <p class="card-tag" data-es="Herramientas internas">Developer tooling</p>
+            <h3 data-es="Un generador de código que se pagó solo">A code generator that paid for itself</h3>
+            <p data-es="Herramienta interna que generaba scripts de SQL Server, capas de Entity Framework/.NET y componentes Vue 3 directamente desde entidades de base de datos, reduciendo el tiempo de desarrollo de catálogos en un 75%.">Internal tool that generated SQL Server scripts, Entity Framework/.NET layers, and Vue 3 components directly from database entities — cutting catalog development time by 75%.</p>
+            <p class="card-meta">Cotemar · .NET + Vue 3</p>
+          </article>
+          <article class="card reveal">
+            <p class="card-tag" data-es="Arquitectura">Architecture</p>
+            <h3 data-es="De monolito a servicios orientados a eventos">Monolith to event-driven services</h3>
+            <p data-es="Dividí flujos de reservas y facturación en servicios desplegables de forma independiente en AWS y desacoplé procesos monolíticos con Azure Service Bus, Functions y Logic Apps.">Split booking and billing workflows into independently deployable services on AWS, and decoupled monolith processes with Azure Service Bus, Functions, and Logic Apps.</p>
+            <p class="card-meta">The Palace · Cotemar</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-es="04 — Stack">04 — Stack</p>
+          <h2 id="skills-title" data-es="Herramientas con las que trabajo">Tools I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Backend</h3>
+            <ul class="chips">
+              <li>C#</li><li>.NET Framework 4.5 → .NET 10</li><li>ASP.NET Core</li><li>ASP.NET MVC</li><li>REST APIs</li><li>Node.js</li><li>NestJS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li>Vue 3</li><li>TypeScript</li><li>Tailwind CSS</li><li>HTML5</li><li>CSS3</li><li data-es="Diseño responsive">Responsive design</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-es="Datos">Data</h3>
+            <ul class="chips">
+              <li>SQL Server</li><li>T-SQL</li><li>Entity Framework / EF Core</li><li data-es="Procedimientos almacenados">Stored procedures</li><li data-es="Optimización de consultas">Query optimization</li><li data-es="Modelado de datos">Data modeling</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-es="Arquitectura">Architecture</h3>
+            <ul class="chips">
+              <li data-es="Microservicios">Microservices</li><li>DDD</li><li>CQRS</li><li data-es="Arquitectura limpia">Clean Architecture</li><li>SOLID</li><li data-es="Orientado a eventos">Event-driven</li><li>Pub/Sub</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-es="Cloud y DevOps">Cloud &amp; DevOps</h3>
+            <ul class="chips">
+              <li>Azure</li><li>AWS</li><li>Docker</li><li>GitHub Actions</li><li>Azure Pipelines</li><li>Service Bus</li><li>Lambda / Functions</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-es="Calidad y seguridad">Quality &amp; Security</h3>
+            <ul class="chips">
+              <li data-es="Pruebas unitarias e integración">Unit &amp; integration testing</li><li data-es="Código seguro">Secure coding</li><li data-es="Validación de DTO">DTO validation</li><li>Key Vault</li><li>Secrets Manager</li><li data-es="Revisiones de código">Code reviews</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-es="Desarrollo asistido por IA">AI-assisted development</h3>
+            <ul class="chips">
+              <li>Claude</li><li>GitHub Copilot</li><li>Cursor</li><li>Model Context Protocol</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-es="05 — Formación">05 — Education</p>
+          <h2 id="education-title" data-es="Formación y certificaciones">Background &amp; certifications</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <h3 data-es="Ing. en Tecnologías de la Información">B.S. in Information Technology Engineering</h3>
+            <p class="edu-meta">Universidad Tecnológica Metropolitana · 2015–2019</p>
+          </div>
+          <ul class="cert-list reveal">
+            <li>
+              <strong>Microsoft Certified: Azure Developer Associate</strong>
+              <span>AZ-204</span>
+            </li>
+            <li>
+              <strong>Microsoft Certified: Azure Fundamentals</strong>
+              <span>AZ-900</span>
+            </li>
+            <li>
+              <strong>Scrum Foundation Professional Certificate</strong>
+              <span>2024</span>
+            </li>
+            <li>
+              <strong>Building with the Claude API</strong>
+              <span>Anthropic</span>
+            </li>
+            <li>
+              <strong>Claude Code in Action</strong>
+              <span>Anthropic</span>
+            </li>
+            <li>
+              <strong>Prompt Engineering</strong>
+              <span>Anthropic</span>
+            </li>
+            <li>
+              <strong>Model Context Protocol (MCP)</strong>
+              <span>Anthropic</span>
+            </li>
+            <li>
+              <strong>Agent Skills</strong>
+              <span>Anthropic</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow" data-es="06 — Contacto">06 — Contact</p>
+        <h2 id="contact-title" data-es="Construyamos algo sólido">Let's build something solid</h2>
+        <p class="contact-lead" data-es="Estoy abierto a roles remotos de fullstack y backend donde pueda ser dueño de los sistemas de punta a punta. La forma más rápida de contactarme es por correo.">
+          I'm open to remote fullstack and backend roles where I can own systems end to end.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:davisaac8@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            davisaac8@gmail.com
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/dimayc" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v11M4 4v.01M10 20v-6a4 4 0 0 1 8 0v6"/><path d="M10 9v11"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/davisaac8" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.3 5.4 2.6 5.4 2.6a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.1c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://medium.com/@davisaac8" target="_blank" rel="noopener">
+            <svg class="icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.77 6.77 0 1 1-13.54 0 6.77 6.77 0 0 1 13.54 0Zm7.42 0c0 3.54-1.52 6.42-3.39 6.42s-3.39-2.88-3.39-6.42 1.52-6.42 3.39-6.42 3.39 2.88 3.39 6.42ZM24 12c0 3.17-.53 5.75-1.19 5.75S21.62 15.17 21.62 12s.53-5.75 1.19-5.75S24 8.83 24 12Z"/></svg>
+            Medium
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> David May Cen</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
